@@ -1,6 +1,5 @@
 def jettyUrl = 'http://localhost:8081/'
 def buildMe = 0
-if (buildMe == 1) {
 stage 'Dev'
 node {
     checkout scm
@@ -71,5 +70,4 @@ def runWithServer(body) {
         undeploy id
     }
 }
-    
-}
+
